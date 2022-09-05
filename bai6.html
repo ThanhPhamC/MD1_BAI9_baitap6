@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<style>
+    body{
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+</style>
+</head>
+<body>
+<div>
+<h1>Do you love me?</h1>
+<button id="yes" style="background-color: #f89a59" onclick="dongy()" >yes</button>
+<button id="no" style=" background-color: #ff466c; position: absolute" onmouseover="tuchoi()" value="sayno">no</button>
+</div>
+</body>
+<script>
+    function dongy(){
+        alert("đi quất thôi <3")
+    }
+    function tuchoi() {
+ a=Math.ceil(Math.random()*window.innerWidth);
+        b=Math.ceil(Math.random()*window.innerHeight);
+
+        document.getElementById("no").style.right=a+'px';
+        document.getElementById("no").style.top= b+'px';
+    }
+</script>
+</html>
